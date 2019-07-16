@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.d{
+				height: 70px;width: 70px;border-radius: 50%;float: left;background: red;margin: 10px;
+			}
+			input{
+				position: absolute;top: 150px;left: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="content">
+			<div class="d"></div>
+			<div class="d"></div>
+			<div class="d"></div>
+			<div class="d"></div>
+			<div class="d"></div>	
+		</div>
+<input type="button" name="" id="btn" value="删除"  />
+		
+	</body>
+	<script type="text/javascript">
+	var deleteN=document.getElementById("content");
+	var btn=document.getElementById("btn");
+		btn.onclick=function()
+		{
+			if(deleteN.hasChildNodes())
+			{
+				deleteN.removeChild(deleteN.lastChild);
+			}
+			else{
+				alert("没有子节点了！")
+			}
+		}	
+	</script>
+</html>

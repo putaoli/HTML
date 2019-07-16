@@ -1,0 +1,432 @@
+html指的是超文本标记语言
+HTML标签：由尖括号包围的关键词，通常是成对出现，第一个标签是开始标签，第二个标签是结束标签 
+开始和结束标签也称为开放标签和闭合标签
+html文档=网页
+html文档描述网页
+html文档包含html标签和纯文本
+
+
+html标题通过<h1>~<h6>等标签进行定义的
+html段落是通过<p>标签进行定义的
+html链接时通过<a>标签进行定义的（在href属性中指定链接地址）
+<a href="http"//www.baidu.com">文本</a>
+html图像是通过<img>标签进行定义的（src属性说明图片地址）
+
+
+html元素指的是从开始标签到结束标签的所有代码
+html元素语法
+1.以开始标签开始
+2.以结束标签终止
+3.元素内容是开始标签与结束标签之间的内容
+4.某些HTML元素具有空内容
+5.空元素在开始标签中进行关闭
+6.大多数htnl元素可拥有属性
+大多数html元素可以嵌套
+使用小写标签
+html属性：属性总是以名称/值对的形式出现，属性总是在HTML元素的开始标签中规定（使用小写属性）属性值应该始终被包括在引号。在某些个别情况下，比如属性值本身就含有双引号，那么必须使用单引号
+属性      描述
+class     规定元素的类名
+id         规定元素的唯一id
+style    规定元素的行内样式
+title     规定元素的额外信息
+
+
+ 默认情况下，html会自动在块级元素前后添加一个额外空行
+html<hr/>标签在html页面中创建水平线
+hr元素可用于分隔内容。
+htnl的注释<!>
+
+html段落通过<p>标签定义的
+<p>是块级元素定义段落
+换行用<br/>
+html中连续的空行会被当做一个空格
+
+style属性用于改变html元素的样式
+background-color属性定义了背景颜色
+font-family  字体系列
+color  颜色
+font-size  字体尺寸
+text-align 文本对齐
+
+html<q>用于短的引用
+<blockquote>用于长引用的html
+<abbr>用于缩略词缩写或首字母缩略词
+<dfn>用于定义html
+<address>用于联系信息的html
+<cite>用于著作标题的html
+<bdo>用于双重写的html
+kbd定义键盘输入
+samp定义计算机输出
+code定义编程代码
+var定义数学变量
+
+
+外部样式表
+<link type="text/css"href="mystyle.css">
+内部样式表 通过在head部分通过<style>标签定义内部样式表
+<head>
+<style>
+body
+{
+background-color:red
+}
+p
+{
+margin-left:20px;
+}
+</style>
+</head>
+内联样式
+当特殊的样式需要应用到个别元素时，就可以使用内联样式。方法时在相关的标签中使用样式属性。可以包含任何css属性
+<p style="color:red;margin-left:20px">aaaa</p>
+
+
+ps:<style>   定义样式定义
+     <link>    定义资源引用
+     <div>     定义文档中的节或区域（块级）
+     <span>   定义文档中的行内的小块或区域
+
+html超链接
+通过<a>标签在惠特米勒中创建链接
+二种方式
+通过href属性-创建指向另一个文档的链接
+通过使用name属性-创建文档内的书签
+HTML链接-target属性
+使用target属性，可以定义被链接的文档在何处显示
+name属性定义了锚的名称
+可以在使用name属性创建html页面中的书签
+书签不会以任何特殊方式显示，它对读者时不可见的。
+当使用命名锚时，可以创建直接跳至该命名锚的链接，这样使用者就无需不停地滚动页面来寻找他们需要的信息了
+（
+创建一个锚进行命名<a name="tips">文本</a>
+然后在同一个文档中创建指向该锚的链接
+<a href="#tips">文本</a>
+也可以在其他页面中创建指向该锚的链接
+<a href="www.127.0.0.1/c/#tips">文本</a>
+）
+？？？？创建电子邮件链接
+
+
+
+图像标签<img>和源属性src
+在html中，图像由<img>标签定义
+<img>是空标签，意思就是说，它只包含属性，并且没有闭合标签
+要在页面上显示图像，你需要使用源属性src。源属性的值是图像的url地址
+定义图像的语法是
+<img src="url">
+替换文本属性 Alt
+alt属性用来为图像定义一串预备的可替换的文本。替换文本属性的值是用户定义的，在游览器无法载入图象时，替换文本属性告诉读者，他们失去的信息。此时，出现的是文本而不是图像
+（假如一个html文件包含十个图像，那么为了正确的显示这个页面需要加载11个文档，加载图片是需要的时间的，所以建议是慎用图片） 
+图像标签
+<img>定义图像
+<map>定义图像地图
+<area>定义图像地图中的可点击区域（
+coords 定义可点击的区域的坐标
+href 定义此区域的目标url
+nohref 从图像映射排除某个区域
+shape 定义区域的形状
+target 规定在何处打开href规定的url
+）
+
+<img src="planets.jpg" border="0" usemap="#planetmap" alt="Planets" />
+
+<map name="planetmap" id="planetmap">
+  <area shape="circle" coords="180,139,14" href ="venus.html" alt="Venus" />
+  <area shape="circle" coords="129,161,10" href ="mercur.html" alt="Mercury" />
+  <area shape="rect" coords="0,0,110,260" href ="sun.html" alt="Sun" />
+</map>
+
+
+表格由<tabel>标签来定义，每个表格均有若干行<tr>标签来定义，每行分割诺干单元格<td>标签定义，td即数据单元格的内容，可以包含文本、图像、列表、段落、表单、水平线、表格等
+在table中可以定义一个边框属性border=“1”
+表格的表头使用<th>标签进行定义
+大多数游览器会把表头显示为粗体居中的文本
+没有内容的单元格有的游览器可能无法显示出这个单元格的边框（可以使用一个空格占位符&nbsp；）
+rowspan属性可以让单元格横跨行如rowspan="2"横跨二行
+使用cellpadding来创建单元格内容与其边框之间的空白
+使用cellspacing增加单元格之间的距离
+使用align属性来排列单元格内容，以创建一个美观的表格向那边靠齐
+<thead>定义表格的页眉
+<tbody>定义表给的主体
+<tfoot>定义表格的页脚
+<col>定义用于表格列的属性
+<colgroup>定义表格列的组
+
+html的列表
+无序列表此列项目使用粗体圆点进行标记
+无序列表始于<ul>标签。每个列表项始于<li>
+列表项内部可以使用段落、换行符、图片、链接以及其他列表
+可以使用type属性来定义标记形状
+
+有序列表
+使用数字进行标记
+有序列表始于<ol>标签，每个列表项始于<li>标签
+列表项内部可以使用段落、换行符、图片、链接以及其他列表
+可以使用type属性来定义标记符号
+
+自定义列表
+以<dl>标签开始，每个自定义列表项以<dt>开始。每个自定义列表项的定义以<dd>开始
+
+列表可以嵌套
+
+
+html<div>和<span>
+大多数html元素被定义为块级元素或内联元素
+
+块级元素在游览器显示时，通常会以新行来开始和结束
+如<h1><p><ul><table>
+
+内联元素
+内联元素在显示的时候通常不会以新的行开始
+如<b>,<td><a><img>
+
+<div>时块级元素
+<span>是内联元素
+
+html分类 class属性
+布局通过css对其进行定位
+
+
+table元素不是作为布局工具而设计的
+什么是响应式web设计（RWD）
+RWD能够以可变尺寸传递网页
+RWD对于平板和移动设备是必须的
+另一种创建RWD的方法，是使用现成的css框架
+bootstrap是最流行的开发响应式web的html，css，和js框架
+
+
+html框架
+框架结构标签<frameset>定义如何将窗口分割为框架
+每个frameset定义了一系列行或列
+rows/columns的值规定了每行或每列占据屏幕的面积（百分比，也可以数字）
+
+框架标签<frame>
+frame标签定义了放置在每个框架中的html文档
+让用户不可用边框改变框架大小可以在frame标签中加入 noresize="noresize"
+提示不能将<bod></body>标签与<frameset></frameset>标签同时使用！不过，假如添加包含一段文本的<noframes>标签，就必须将这段文字嵌套在<body></body>标签内
+<html>
+
+<frameset cols="25%,50%,25%">
+  <frame src="/example/html/frame_a.html">
+  <frame src="/example/html/frame_b.html">
+  <frame src="/example/html/frame_c.html">
+
+<noframes>
+<body>您的浏览器无法处理框架！</body>
+</noframes>
+
+</frameset>
+
+</html>
+
+内联框架iframe定义内联的子窗口
+添加iframe的语法
+<iframe src="URL"></iframe>
+删除边框frameborder=“0”
+iframe作为链接的目标
+使用target属性必须引用iframe的name属性
+由于链接的目标匹配 iframe 的名称，所以链接会在 iframe 中打开。
+
+
+html背景
+<body>拥有两个配置背景的标签，背景可以似乎颜色或者图像
+背景颜色bgcolor:属性可以是十六进制数、RGB值或颜色名
+背景 background 属性将背景设置为图像。属性值为图像的url
+注意：
+1.背景图像是否增加了页面的加载时间。图像文件不应超过10k
+2.背景图像是否与页面中的其他图像搭配良好。
+3.背景图像是否与页面中的文字颜色搭配良好
+4.图像在页面中平铺后，的效果
+5.对文字的注意力被背景图像的相关
+（淘汰的技术通过css来使用）
+
+html脚本javascript使html页面具有更强的动态和交互性
+当游览器不支持javascript时使用<noscript>标签来提示
+<script>标签用于定义客户端脚本比如javascript
+script元素即可包含脚本语句，也可通过src属性指向外部脚本文件
+必须的type属性规定了脚本的mime类型
+javascript最常见图片操作’表单验证以及内容动态更新
+应该将脚本隐藏在注释标签当中。那些老的浏览器（无法识别 <script> 标签的浏览器）将忽略这些注释，所以不会将标签的内容显示到页面上。而那些新的浏览器将读懂这些脚本并执行它们，即使代码被嵌套在注释标签内。
+
+html文件路径使用相对路径是个好习惯
+绝对文件路径是指向一个因特网文件的完整url
+<img src="https://www.baidu,=.com/images/picture.jpg" alt="flower">
+相对路径指向了相对于当前页面的文件
+<img src="/images/picture.jpg"alt="flower">
+
+html头部元素
+<head>元素是所有头部元素的容器。<head>内的元素可包含脚本等
+<title>标签定义文档的标题
+title元素在所有html/xhtml文档中都是必须的
+能够定义游览器工具栏中的标题，提供页面被添加到收藏夹时显示的标题，显示在搜索引擎结果中的页面标题
+base标签为页面上所有链接规定默认地址或默认目标（target）
+link标签定义文档与外部资源之间的关系最常用于连接样式表
+style标签用于为html文档定义样式信息
+meta元素时元数据是关于数据的信息。
+meta标签提供关于html文档的元数据。元数据不会显示在页面上，但是对于机器是可读的。典型的情况就是，么她、元素被用于规定页面的描述、关键词、文档的作者、最后修改时间以及其他元数据。meta标签始终位于head元素中。一些搜索引擎会利用meta元素的name和content属性来索引您的页面
+script标签用于定义客户端脚本
+html字符实体
+html中的预留字符必须被替换为字符实体
+html实体：在html中，不能使用小于号和大于号，会被误认为标签
+小于号：&lt或&#60
+使用实体名而不是数字的好处是，名称易于记忆。坏处是，游览器也许并不支持所有实体名称（对实体数字的支持却很好）
+不间断空格：html中的常用字符实体是不间断空格non-breaking space（&nbsp）
+
+
+url也被称为网址，可以由单词组成或者是因特网协议地址（ip）
+url=统一资源定位器
+scheme：//host。domain：port/path/filename
+scheme定义因特网服务类型最常见的是http
+host定义域主机（http的默认主机是www）
+domain定义因特网域名
+：port定义主机上的端口号（http的默认端口号是80）
+path定义服务器上的路径
+filename定义文档/资源的名称
+http超文本传输协议以http：//开头的普通网页。不加密
+https安全超文本传输协议安全网页。加密所有信息交换
+ftp文件传输协议用于将文件下载或上传至网站
+file您计算机上的文件
+
+因特网服务提供商isp
+
+颜色由一个十六进制符号来定义，这个符号由红色、绿色、蓝色的值组成RGB
+颜色最小值是0十六进制#00，最大值是255十六进制#ff
+
+<!DOCTYPE>声明
+web世界中存在许多不同的文档，不是html标签，他为游览器提供一项信息声明。即html是用什么版本编写的
+
+html表单
+html表单用于搜索不同类型的用户输入
+<form>元素定义html表单
+表单元素指的是不同类型的input元素‘复选框、单选按钮、提交按钮
+input元素是最重要的表单元素
+input元素有很多形态。根据不同的type属性来定义
+如text定义常规文本输入
+    radio定义单选按钮输入（选择多个选择之一）
+    submit定义提交按钮（提交表单）
+文本输入<input type="text">定义输入的单行输入字段
+单选按钮输入
+<input type="radio">定义单选按钮
+提交按钮
+<input type="submit">定义用于向表单处理程序提交表单的按钮
+表单处理程序在表单的action属性中指定
+
+action属性定义在提交表单时执行的动作向服务器提交表单时执行的动作
+通常做法时使用提交按钮通常表单会提交到web服务器上的网页
+
+method属性规定在提交表单时所用的http方法（get或post）
+get（默认）表格时被动提交，表单数据在页面地址栏中时可见的
+get最适合少量的数据提交
+
+post的安全性更好，因为在页面地址栏中被提交的数据是不可见的
+
+name属性如果要正确的被提交，每个输入字段必须设置一个name属性
+
+用<fieldset>组合表单数据（框）
+fieldset元素组合表单中的相关数据
+legend元素为<fieldset>元素定义标题
+
+form属性列表
+accept-charset规定在被提交哦啊表单中使用的字符集（默认页面字符集）
+action规定向何处提交表单的地址（url提交页面）
+autocomplete规定游览器应该制动完成表单（默认开启）
+enctype规定被递交数据的编码（默认 url-encoded）
+method规定在提交表单时所用的HTTP方法（默认get）
+name规定识别表单的名称
+novalidate规定游览器不言中表单
+target规定action属性中地址的目标（默认：_self）
+
+表单元素
+<select>元素（下拉列表）
+<select>元素定义下拉列表
+<option>元素定义待选择的选项
+列表通常会把首个选项显示为被选选项
+可以通过selected属性来dinginess预定义选项
+
+
+<textarea>元素
+<textarea>元素定义多行输入字段（文本域）
+
+<button>
+<button>元素定义可点击的按钮
+
+html5表单增加了<datalist><keygen><output>元素
+<datalist>元素为input元素规定预定义选项列表用户会在他们输入数据时看到预定义选项的下拉列表
+input元素的list属性必须引用datalist元素的id属性
+<form action="action_page.php">
+<input list="browsers">
+<datalist id="browsers">
+   <option value="Internet Explorer">
+   <option value="Firefox">
+   <option value="Chrome">
+   <option value="Opera">
+   <option value="Safari">
+</datalist> 
+</form>
+
+input元素的输入类型
+text定义供文本输入的单行输入字段
+password定义密码字段
+submit定义表单数据至表单处理程序的按钮
+
+radio定义单选按钮
+checkbox定义复选框
+button定义按钮
+
+html5输入类型
+增加了多个新的输入类型
+color
+data
+datatime
+datetime-local
+email
+month
+range
+search
+tel
+time
+url
+week
+注释：老式web游览器不支持的输入类型，会被视为输入类型text
+如number用于应该包含数字值的输入字段
+   data用于应该包含日期的输入字段
+   color用于应该包含颜色的输入字段
+   range用于应该包含一定范围的输入字段（用属性来规定限制）
+   month允许用户选择月份和年份
+   week允许用户选择周和年
+   time允许用户选择时间（无时区）
+   datetime允许用户选择日期和时间（有时区）
+    datetime-local允许用户选择日期和时间（无时区）
+   email用于应该包含电子邮件地址的输入字段
+  search用于搜索字段
+  tel用于应该包含电话号码的输入字段
+url 用于应该包含url地址的输入字段
+
+
+输入限制
+diasbled 规定输入字段应该被禁用
+max规定输入字段的最大值
+maxlength规定输入字段的最大字符数
+min规定输入字段的最小值
+pattern规定通过其检查输入值的正则表达式
+readonly规定输入字段为只读（无法修改）
+required规定输入字段是必须的
+size规定输入字段的宽度
+step规定输入字段的合法数字间隔
+value规定输入字段的默认值
+
+input属性
+value属性规定输入字段的初始值
+readonly属性规定输入字段为只读
+diasbled 规定输入字段应该被禁用
+size规定输入字段的宽度
+maxlength规定输入字段的最大字符数
+placeholder 属性规定用以描述输入字段预期值的提
+formtarget 属性规定的名称或关键词指示提交表单后在何处显示接收到的响应。
+novalidate 属性是布尔属性。
+
+如果设置，则规定在提交表单时不对 <input> 元素进行验证。
+
+formnovalidate 属性覆盖 <form> 元素的 novalidate 属性。
+
+formnovalidate 属性可用于 type="submit"。

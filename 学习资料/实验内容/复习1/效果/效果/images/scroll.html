@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	
+	<style type="text/css">
+/*整体控制*/
+body,ul,li,img{
+	margin:0;
+	padding:0;
+	border:0; 
+	list-style:none;
+}
+a:link,a:visited{
+	text-decoration:none;
+}
+body{
+	background:#F1F1F1;
+}
+.imgbox{
+	width:980px;
+	height:92px;
+	background-color:#fff;
+	border:1px solid #ddd;
+	margin:20px auto; 
+	padding:10px;
+	overflow:hidden;
+	white-space: nowrap;
+}
+.imgbox img{
+	width:126px; 
+	height:86px; 
+	border:1px #ccc solid; 
+	padding:2px;
+}
+.imgbox a{
+	margin-right:20px;
+}
+</style>
+<script type="text/javascript">
+    window.onload = function(){
+    //定义滚动速度
+	var speed = 20;
+	//获取<div id="imgbox">元素
+	var imgbox = document.getElementById("imgbox");
+	//复制一个<span>，用于无缝滚动
+	imgbox.innerHTML += imgbox.innerHTML;
+	//获取两个<span>元素
+
+	var span = imgbox.getElementsByTagName("span");
+		console.log(span);
+	//启动定时器，调用滚动函数
+	var timers = setInterval(marquee,speed);
+	//鼠标移入时暂停滚动，移出时继续滚动
+	imgbox.onmouseover = function(){
+		clearInterval(timers);
+	}
+	imgbox.onmouseout = function(){
+		timers=setInterval(marquee,speed);
+	};
+	//滚动函数
+	function marquee(){
+		//当第1个<span>被完全卷出时
+		if(imgbox.scrollLeft > span[0].offsetWidth){
+			//将被卷起的内容归0
+			imgbox.scrollLeft = 0;
+		}else{
+			//否则向左滚动
+			++imgbox.scrollLeft;
+		}
+	}
+}
+</script>
+</head>
+<body>
+<!--校园环境展示-->
+	<div class="imgbox" id="imgbox">
+		<span>
+			<a href="#"><img src="6.jpg" /></a>
+			<a href="#"><img src="7.jpg" /></a>
+			<a href="#"><img src="8.jpg" /></a>
+			<a href="#"><img src="9.jpg" /></a>
+			<a href="#"><img src="10.jpg" /></a>
+			<a href="#"><img src="11.jpg" /></a>
+			<a href="#"><img src="12.jpg" /></a>
+			<a href="#"><img src="13.jpg" /></a>
+		</span>
+	</div>
+</body>
+</html>
+	<body>
+	</body>
+</html>

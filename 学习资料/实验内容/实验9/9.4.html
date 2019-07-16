@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.d{
+				height: 100px;
+				width: 100px;
+				border: 1px black solid;
+				margin: 20px;
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+	<button id="btn">填充颜色</button><br />
+		<div class="d"></div>
+		<div class="d"></div>
+		<div class="d"></div>
+		<div class="d"></div>
+		<div class="d"></div>
+		<div class="d"></div>
+	</body>
+<script>
+	btn=document.getElementById("btn");
+	btn.onclick=function() {
+    var x = document.getElementsByClassName("d");
+    var i;
+    for (i = 0; i < x.length; i++) {
+       var a=parseInt(Math.random()*10);
+//     alert(a);
+       var b=parseInt(Math.random()*10);
+       var c=parseInt(Math.random()*10);
+       var d=parseInt(Math.random()*10);
+       var e=parseInt(Math.random()*10);
+       var f=parseInt(Math.random()*10);
+       var g="#"+a+b+c+d+e+f;
+//     alert(g);
+       x[i].style.backgroundColor=g;
+    }
+}
+</script>
+</html>

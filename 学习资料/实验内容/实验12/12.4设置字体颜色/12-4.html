@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+<body>
+	<form name="form1" action="" >
+		<input type="text" name="textfield" id="textfield" value="JavaScript自学视频教程"  size="23"/>
+		<select name="menu1" onchange="Fcolor()">
+			<option value="black">黑</option>
+			<option value="yellow">黄</option>
+			<option value="blue">蓝</option>
+			<option value="green">绿</option>
+			<option value="red">红</option>
+			<option value="purple">紫</option>
+		</select>
+	</form>
+	<script type="text/javascript">
+		function Fcolor(){
+			var e=window.event;
+			var obj=e.srcElement;
+			document.getElementById("textfield").style.color=obj.options[obj.selectedIndex].value;
+		}
+	</script>
+</body>
+</html>

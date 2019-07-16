@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style type="text/css">
+.accordion{
+	margin: 10px auto;
+	width: 70%;
+	min-width: 600px;
+}
+ .section h3+div{
+	height: 0px;
+	overflow: hidden;
+	}
+ :target .d{
+		height: 300px;
+		overflow: auto;	
+	}
+</style>
+</head>
+<body>
+<div class="accordion">
+    <h2>壁纸世界</h2>
+    <div id="one" class="section">
+        <h3> <a href="#one">花草植物</a> </h3>
+        <div class="d"><img src="images/11.png"></div>
+    </div>
+    <div id="two" class="section">
+        <h3> <a href="#two">旅游风光</a> </h3>
+        <div class="d"><img src="images/22.png"></div>
+    </div>
+    <div id="three" class="section">
+        <h3> <a href="#three">海底世界</a> </h3>
+        <div class="d"><img src="images/33.png"></div>
+    </div>
+</div>
+</body>
+</html> 

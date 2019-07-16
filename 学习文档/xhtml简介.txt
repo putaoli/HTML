@@ -1,0 +1,19 @@
+xhtml是以xml格式编写的html
+xhtml指的是可扩展超文本标记语言
+xhtml与HTML4.01几乎相同
+xhtml是更严格更纯净的html版本
+xhtml是以xml应用的方式定义的html
+xhtml是2001年1月发布的w3c推荐标注
+xhtml得到了所有主流游览器的支持
+xml是一种必须正确标记且格式良好的标记语言
+XHTML DOCTYPE 是强制性的
+<html> 中的 XML namespace 属性是强制性的
+<html>、<head>、<title> 以及 <body> 也是强制性的
+
+如何从html转换到xhtml
+每张页面的第一行添加xhtml<!DOCTYPE>
+每张页面的HTML元素添加xmlns属性
+所有元素名改为小写
+关闭所有空元素
+所有属性名改为小写
+所有属性值加引号

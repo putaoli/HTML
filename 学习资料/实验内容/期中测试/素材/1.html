@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0px;
+				padding:0px
+			}
+			#container{
+				width: 767px;
+				border: 1px solid paleturquoise;
+				height: 770px;
+				position: relative;
+				margin: 0 auto;
+			}
+			body{
+				background:
+				 url(images/top.jpg),
+				 url(images/down.jpg);
+				 background-repeat: no-repeat;
+				background-position: center top,center bottom;
+				
+			}
+			#left{
+				height: 500px;
+				position: absolute;
+				left: 0px;
+				top:200px;
+				width: 25%;
+			}
+			#right1{
+				background: url(images/right.jpg) no-repeat left top;
+				text-indent: 2em;
+				width: 500px;
+				position: absolute;
+				right:0px;
+				top:200px;
+				width: 75%;
+			}
+			p{
+				font-size:15px;
+				margin-top: 77px;
+				margin-left: 25px;
+				margin-right: 10px;
+				line-height: 28px;
+			}
+			#right2{
+				position: absolute;
+				right: 0px;
+				top: 490px;
+				float: right;	
+			}
+			
+			#left li{
+				list-style-image: url(images/bullet_disk.gif);
+				list-style-position: inside;
+				margin-left: 15px;
+				font-size: 22px;
+				height: 60px;
+				width: 160px;
+				line-height: 60px;
+				text-align: center;
+				background: linear-gradient(45deg,powderblue,white);
+				border-radius: 10px;
+				margin-bottom: 10px;
+			}
+			#left li:hover{
+				background: linear-gradient(270deg,pink,white);
+				
+			}
+			#right2 li{
+				display: inline;
+			}
+			img{
+				width: 100px;
+				height: 80px;
+				border-radius: 10px;
+				margin-right: 10px;
+			}
+			#biaodan{
+				font-size: 12px;
+				margin: 0px;
+				padding: 0px;
+				position: absolute;
+				top:520px;
+				width: 200px;
+				height: 150px;
+			}
+			#dl{
+				margin-top: 15px;
+				position: absolute;
+				left:50%;
+				transform: translateX(-50%);
+			}
+			
+			a{
+				text-decoration: none;
+				color: black;
+			}
+			a:hover{
+				color: blueviolet;;
+			}
+			#dl{
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div id="left">
+			<ul>
+				<li><a href="#">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+				<li><a href="#">数字科技</a></li>
+				<li><a href="#">数字时尚</a></li>
+				<li><a href="#">联系我们</a></li>
+				<li><a href="#">数字未来</a></li>
+			</ul>
+			</div>
+			<div id="right1">
+				<p>自人类进入高速发展的信息时代，数字产品正在不断的融入人们的生活。从最初价格高昂的CD随身听，到今天随处可见MP3、MP4、PSP游戏机、智能手机、平板电脑、笔记本计算机、数码相机等等，数码产品在数量和质量上都出现了几何级速度的激增。
+另外，随着计算机技术、集成电路技术、存储技术、软件技术的跨越式发展，数码产品越来越呈现出微型化、智能化、人性化的发展趋势，如今，安装有智能操作系统的智能手机终端、动则数十G甚至上百G的MP4、平板电脑，已经从根本上改变了人们的生活习惯，实践着人类从传统生活方式向数字生活方式的演进。</p>
+			</div>
+			<div id="right2">
+			<ul>
+				<li><img src="images/ipad2.jpg"/></li>
+				<li><img src="images/prod1.jpg"/></li>
+				<li><img src="images/prod2.jpg"></li>
+				<li><img src="images/prod3.jpg"/></li>
+			</ul>
+			</div>
+			<div id="biaodan">
+				<form action="#" method="post">
+					<p><label for="xing">姓名：</label><input type="text" name="xing" id="xing" value=""  size="9"/><br />
+					<label for="mi">密码：</label><input type="password" name="mi" id="mi" value=""  size="9"/><br />
+					<input id="dl" type="submit" value="登录"/></p>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

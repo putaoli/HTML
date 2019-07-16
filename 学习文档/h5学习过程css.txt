@@ -1,0 +1,24 @@
+外部样式表
+<link type="text/css"href="mystyle.css">
+内部样式表 通过在head部分通过<style>标签定义内部样式表
+<head>
+<style>
+body
+{
+background-color:red
+}
+p
+{
+margin-left:20px;
+}
+</style>
+</head>
+内联样式
+当特殊的样式需要应用到个别元素时，就可以使用内联样式。方法时在相关的标签中使用样式属性。可以包含任何css属性
+<p style="color:red;margin-left:20px">aaaa</p>
+
+
+ps:<style>   定义样式定义
+     <link>    定义资源引用
+     <div>     定义文档中的节或区域（块级）
+     <span>   定义文档中的行内的小块或区域

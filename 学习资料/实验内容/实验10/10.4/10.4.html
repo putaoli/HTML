@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" name="btn" id="btn" value="打开百度" />
+		<input type="button" name="btn_t" id="btn" value="关闭百度" onclick="closewin()" />
+	</body>
+	<script type="text/javascript">
+		    btn=document.getElementById("btn");
+		    btn_t=document.getElementById("btn_t");
+		    btn.onclick=function(){
+		   	myWindow=window.open("http://www.baidu.com"," ",'width=400,height=400');
+		   	
+		   }
+		   function closewin(){
+		   	myWindow.close();
+		   }
+	</script>
+</html>

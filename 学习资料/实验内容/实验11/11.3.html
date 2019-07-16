@@ -1,0 +1,32 @@
+<html xmlns="http://www.w3.org/1999/xhtml">   
+<head>   
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />   
+<title>复制节点</title>   
+<script language="javascript"> 
+	<!--
+		function AddRow(bl)
+		{
+			var sel=document.getElementById("sexType");
+		    var newSelect=sel.cloneNode(bl);   
+			var  b=document.createElement("br");
+    		di.appendChild(newSelect);   
+			di.appendChild(b);    		
+		}      		
+	-->    
+</script>   
+</head>   
+<body>   
+<form>   
+	<hr>
+    <select name="sexType" id="sexType">   
+     <option value="%">请选择性别</option>   
+     <option value="0">男</option>   
+     <option value="1">女</option>   
+    </select> 
+	<hr>
+<div id="di"></div>    
+ <input type="button" value="复制" onClick="AddRow(false)"/>
+ <input type="button" value="深度复制" onClick="AddRow(true)"/>
+</form>   
+</body>   
+</html>  

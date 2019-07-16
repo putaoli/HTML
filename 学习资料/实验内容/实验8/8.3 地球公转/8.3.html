@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		*{
+			padding: 0px;
+			margin: 0px;
+		}
+		body{
+			background: url(79053013448294078.jpg) no-repeat center center;
+			background-size:cover
+		}
+		#guidao{
+			width: 400px;
+			height: 400px;
+			/*border: 1px dotted ghostwhite;*/
+			box-sizing: border-box;
+			border-radius: 50%;
+			position: absolute;
+			top:100px;
+			left:100px;		
+		}
+		.content{
+				margin: 50px auto;
+				height: 600px;
+				width: 600px;
+				border-radius: 50%;
+				position: relative;
+			}
+		.content #sun{
+			width: 100px;
+			height: 100px;
+			background:linear-gradient(15deg,red,orange);
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;
+			border-radius: 50%;
+			border: 1px orange solid;
+			box-shadow: 5px 10px 20px black;
+			position: absolute;
+			top:250px;
+			left:250px;		
+		}	
+		.content #globe{
+			width: 50px;
+			height: 50px;
+			background: url(globe.jpg) no-repeat center center;
+			background-size: contain ;
+			border-radius:50%;
+			position: absolute;
+			top:100px;
+			left:100px;
+			box-shadow: 5px 2px 20px gray;
+			transform-origin: 200px 200px;
+			animation: globe 5s linear infinite;
+		}
+		@keyframes globe{
+			from{transform: rotate(0deg);}
+			to{transform: rotate(360deg);}
+		}
+		</style>
+		
+	</head>
+	<body>
+		<div class="content">
+			<div id="sun"></div>
+			<div id="globe"></div>
+			<div id="guidao"></div>
+		</div>
+	</body>
+	
+</html>

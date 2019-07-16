@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	<b id="b1">可以替换文本内容</b>
+    <br />
+       输入标记：<input id="bj" type="text" size="15" /><br />
+       输入文本：<input id="txt" type="text" size="15" /><br />
+    <input type="button" value="替换" onclick="repN(txt.value,bj.value)" />
+	</body>
+	<script language="javascript">
+		function repN(str,bj)
+		{
+			var rep=document.getElementById('b1');
+			if(rep)
+			{
+				var newNode=document.createElement(bj);
+				newNode.id="b1";
+				var newText=document.createTextNode(str);
+				newNode.appendChild(newText);
+				rep.parentNode.replaceChild(newNode,rep);
+			}
+		}
+</script>
+</html>

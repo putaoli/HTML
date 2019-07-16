@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				background: url(login.jpg);
+				background-position: left top;
+				background-repeat: no-repeat;
+				background-size: 25%;
+			}
+			div{
+				margin-top:80px;
+		
+			}
+		</style>
+	</head>
+	<body onload="f()">
+	<div id="content">	
+	<form name="form1" method="post" action="#">
+	<label>用户名：<input type="text" name="" id="" value="" size="4"/></label>
+	<label>密码：<input type="password" name="" id="" value="" size="4"/></label><br />
+	<label for="t">
+	验证码：<input type="text" name="" id="t" value=""  size="4"/></label><span id="yzm">
+	</span><br />
+	<p></p>
+	<input type="submit" name="" id="" value="确定" />&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="button" name="btn" id="btn" value="看不清" />	
+	</form>
+	</div>
+	</body>
+	<script type="text/javascript">
+change=document.getElementById("btn");
+function f(){	
+var str="";
+var img="";
+var strsource=['明','天','日','科','技','会','更','好','创','新'];
+for(var i=0;i<4;i++){
+	var n=Math.floor(Math.random()*strsource.length);
+//	str=str+strsource[n];
+	console.log(str);
+	img=img+"<img src='"+n+".gif' width='19' height='20'> ";
+//	console.log(img);
+	document.getElementById("yzm").innerHTML=img;
+}
+}
+change.onclick=function(){
+	f();
+}
+</script>
+</html>

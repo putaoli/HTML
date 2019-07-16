@@ -1,0 +1,4 @@
+在本例中，文件路径指向了位于当前文件夹的上一级文件夹中 images 文件夹里的一个文件：
+<img src="../images/picture.jpg" alt="flower">
+在本例中，文件路径指向了位于当前网站根目录中 images 文件夹里的一个文件：
+<img src="/images/picture.jpg" alt="flower">

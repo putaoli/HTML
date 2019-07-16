@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+			img{
+	width:250px; 
+	height:160px; 
+	border:1px #ccc solid;
+	border-radius: 15px; 
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload = function(){
+	var a =1000;
+	var n=1;
+	var img = document.getElementById("img");
+	//每间隔1000毫秒，调用一次marquee函数
+	var times = setInterval(marquee,a);
+	//自定义marquee函数
+	function marquee(){
+		    n++;//n的值自增
+			img.src=n+".jpg";
+			//进行条件判断，当n>13时，把n重置为1；
+			if(n>13){
+				n=1;
+			}
+	    }	
+	}  
+		</script>
+	</head>
+	<body>
+		<div id="box">
+			<img  id="img" src="1.jpg"/>
+		</div>
+	</body>
+</html>

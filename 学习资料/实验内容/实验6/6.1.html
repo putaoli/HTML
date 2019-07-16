@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style type="text/css">
+.feedback{
+	margin: 0 auto;
+	padding:0 20px 10px 20px;
+	width: 440px;
+	border: 1px solid gainsboro;
+	border-radius: 10px;
+	box-shadow: 2px 2px 1px gainsboro;
+}
+.base_info{
+	padding-left: 20px;
+	margin-bottom: ;
+	border: none;
+	border-top: 1px solid gray;
+	width: 400px;
+}	
+.userName label{
+	text-indent: 1em;
+}
+.url label{
+	text-indent: 2em;
+}
+.userName,.url,.p_email{
+	font-size: 15px;
+	color:gray;
+}
+.p_content{
+	padding-left: 20px;
+	border: none;
+	border-top: 1px solid gray;
+	width: 400px;
+	color: gray;
+}
+.p_content legend{
+	color: black;
+}
+.btns{
+	position: relative;
+	left: 38%;
+}
+button{
+	padding-left: 10px;
+	margin: 10px;
+	border-radius: 3px;
+}
+label{
+	float: left;
+}
+.tips{
+	font-size: 12px;
+	color: red;
+}
+</style>
+</head>
+<body>
+<div class="feedback">
+    <h3>反馈表单</h3>
+    <div class="content">
+        <form method="post" action="">
+            <fieldset class="base_info">
+                <legend>用户信息</legend>
+                <p class="userName">
+                    <label for="userName">用户名：</label>
+                    <input type="text" value="" id="userName" size="8">
+                </p>
+                <p class="p_email">
+                    <label for="email">电子邮件：</label>
+                    <input type="text" value="@" id="email" size="25">
+                </p>
+                <p class="url">
+                    <label for="url">网址：</label>
+                    <input type="text" value="http://" id="url" size="30">
+                </p>
+            </fieldset>
+            <fieldset class="p_content">
+                <legend>反馈内容</legend>
+                <p class="file">
+                    <label>相关图片：</label>
+                    <input type="file">
+                    <p class="tips">本系统只支持上传.jpg、.gif、.png图片。</p>
+                </p>
+                <p class="p_msg">
+                    <label for="msg">内容：</label>
+                    <textarea rows="4" cols="40" id="msg"></textarea>
+                    <p class="tips">请输入留言内容！</p>
+                </div>
+            </fieldset>
+            <div class="btns">
+                <button type="submit">提交</button>
+                <button type="reset">重置</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html> 

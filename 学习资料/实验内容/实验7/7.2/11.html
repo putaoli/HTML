@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		#content{
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			border-image: url(images/border.png);
+			border-image-slice: 27;
+			border-image-width: 3;
+			border-image-repeat: round;
+			min-width: 760px;	
+		}
+		img{
+			height: 100px;
+			width: 150px;
+		}
+		div{
+			float: left;
+			border: 2px solid orange;
+			border-radius: 5px;
+			padding: 5px;
+			margin-bottom: 20px;
+		}
+		div:nth-child(2n-1){
+			margin-right: 20px;
+			margin-left: 20px;
+		}
+			div:nth-child(5){
+				clear: left;	
+			}
+			div:nth-child(1),div:nth-child(2),div:nth-child(3),div:nth-child(4){
+				margin-top: 20px;
+			}
+			div:nth-child(4),div:nth-child(8){
+				margin-right: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="content">
+			<div><img src="images/dizaoyin.jpg"/></div>
+			<div><img src="images/ranqi.jpg"/></div>
+			<div><img src="images/jichai.jpg"/></div>
+			<div><img src="images/kangmingsi.jpg"/></div>
+			<div><img src="images/shangchai.jpg"/></div>
+			<div><img src="images/tongchai.jpg"/></div>
+			<div><img src="images/deguobenchi.jpg"/></div>
+			<div><img src="images/daoyici.jpg"/></div>
+		</div>
+	</body>
+</html>
