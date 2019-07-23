@@ -1,0 +1,18 @@
+ul{
+	list-style-type: none;
+	text-align: left;
+}
+h2{
+	padding-left:40px ;
+}
+h1{
+	padding-left:40px ;
+}
+li.a{
+	float: left;
+	padding-right: 10px;
+}
+h2{
+	clear: both;
+	padding-top: 20px;
+}
