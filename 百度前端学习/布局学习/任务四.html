@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				border: 0;
+			}
+			.float{
+				width: 100%;
+			}
+			.zoufloat{
+				width: 100px;
+				float: left;
+				background: red;
+			}
+			.zhongfloat{
+				float: left;
+				background: yellow;
+				width: calc(100% - 200px);
+			}
+			.youfloat{
+				float: right;
+				width: 100px;
+				background: green;
+			}
+			.flex{
+				width: 100%;
+				display: flex;
+			}
+			.zouflex{
+				width: 100px;
+				background: red;
+			}
+			.zhongflex{
+				flex: 1;
+				background: yellow;
+			}
+			.youflex{
+				width: 100px;
+				background: green;
+			}
+			.position{
+				width: 100%;
+				position: relative;
+			}
+			.zuoposition{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100px;
+				background: red;
+			}
+			.zhongposition{
+				position: absolute;
+				background: yellow;
+				width: calc(100% - 200px);
+				left: 100px;
+			}
+			.youposition{
+				position: absolute;
+				background: green;
+				width: 100px;
+				right: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<p>float</p>
+		<div class="float">
+			<div class="zoufloat">
+				左不变
+			</div>
+			<div class="zhongfloat">
+				中变
+			</div>
+			<div class="youfloat">
+				右不变
+			</div>
+		</div>
+		<p>flexbox</p>
+		<div class="flex">
+			<div class="zouflex">
+				左不变
+			</div>
+			<div class="zhongflex">
+				中变
+			</div>
+			<div class="youflex">
+				右不变
+			</div>
+		</div>
+		<p>position</p>
+		<div class="position">
+			<div class="zuoposition">
+				左不变
+			</div>
+			<div class="zhongposition">
+				中变
+			</div>
+			<div class="youposition">
+				右不变
+			</div>
+		</div>
+	</body>
+</html>

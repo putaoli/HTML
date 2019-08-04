@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#html1{
+				width: 100%;
+			}			
+			.you{
+				background: red;
+				margin-right: 100px;
+			}
+			.zuo{
+				background: green;
+				width: 100px;
+				float: right;
+			}
+			#htmlflexbox{
+				display: flex;
+			}
+			.zouflex{
+				background: red;
+				flex: 1;
+			}
+			.youflex{
+				background: green;
+				width:100px;
+			}
+			#htmlposition{
+				width: 100%;
+				position: relative;
+			}
+			.zouposition{
+				background: red;
+				position: absolute;
+				width: calc(100% - 100px);
+			}
+			.youposition{
+				background: green;
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<p>float</p>
+		<div id="html1">
+			<div class="zuo">
+				bu变
+			</div>
+			<div class="you">
+				可变
+			</div>
+		</div>
+		<p>flex</p>
+		<div id="htmlflexbox">
+			<div class="zouflex">
+				可变
+			</div>
+			<div class="youflex">
+				不变
+			</div>
+		</div>
+		<p>position</p>
+		<div id="htmlposition">
+			<div class="zouposition">
+				可变
+			</div>
+			<div class="youposition">
+				不变
+			</div>
+		</div>
+	</body>
+</html>

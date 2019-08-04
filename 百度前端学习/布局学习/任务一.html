@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#html1{
+				width: 100%;
+				position: relative;
+			}
+			.zuo{
+				float: left;
+				width: 30%;
+			}
+			.you{
+				float: right;
+				width: 70%;
+			}
+			.zuoposition{
+				background: red;
+				position: absolute;
+				width: 30%;
+			}
+			.youposition{
+				background: green;
+				position: absolute;
+				width: 70%;
+				right: 0;
+			}
+			#htmlflex{
+				display: flex;
+				
+			}
+			.zuoflexbox{
+				background: red;
+				flex: 3;
+			}
+			.youflexbox{
+				background: green;
+				flex: 7;
+			}
+		</style>
+	</head>
+	<body>
+		<p>float</p>
+		<div id="html1">
+			<div class="zuo" style="background: red;">
+				abc <br />abc
+			</div>
+			<div class="you" style="background: green;">
+				abc <br />abc
+			</div>
+		</div>
+		<p>flexbox</p>
+		<div id="htmlflex">
+			<div class="zuoflexbox">
+				abc <br />abc
+			</div>
+			<div class="youflexbox">
+				abc <br />abc
+			</div>
+		</div>
+		<p>position</p>
+		<div id="html1">
+			<div class="zuoposition">
+				abc <br />abc
+			</div>
+			<div class="youposition">
+				abc <br />abc
+			</div>
+		</div>
+	</body>
+</html>
