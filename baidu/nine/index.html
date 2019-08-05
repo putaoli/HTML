@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>十一天</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#Header{
+				width: 100%;
+				height: 700px;
+				background-color: black;
+				position: relative;
+			}
+			.header1{
+				width: 100%;
+				height: 700px;
+				background-color: black;
+				background-image: url('img/图层 1.png');
+				background-size: 100% 700px;
+				background-repeat: no-repeat;
+				width: 100%;
+				height: 700px;
+				opacity: 0.5;/* 透明度设置*/
+			}
+			.header2{
+				width: 80%;
+				height: 700px;
+				position: absolute;
+				top: 0;
+				left: 10%;
+			}
+			.header2biao{
+				width: 80%;
+				margin: 30px auto;
+				
+			}
+			#youxiang{
+				background-color: rgba(0,0,0,0);  /*背景透明,内容不透明*/
+				width: 200px;
+				margin-right: 10px;
+				height: 30px;
+				border: 1px solid #565550;
+				color: white;
+				font-size: 12px;
+			}
+			#password{
+				background-color: rgba(0,0,0,0);
+				width: 200px;
+				height: 30px;
+				margin-right: 10px;
+				border: 1px solid #565550;
+			}
+			#Feature1{
+				background: #FFFFFF;
+				width: 100%;
+				height: 600px;
+			}
+			.kuang1{
+				width: 50%;
+				float: left;
+				height: 200px;
+			}
+			.kuang1 img{
+				float: left;				
+			}
+			.kuang1text1{
+				font-size: 20px;
+				margin: 0 40px;
+			}
+			.kuang1text2{
+				font-size: 16px;
+				margin: 5px 40px ;
+			}
+			.kuang2{
+				float: left;
+				width: 50%;
+				height: 200px;
+			}
+			.kuang2 img{
+				float: left;
+			}
+			.kuang2text1{
+				font-size: 20px;
+				margin: 0 50px;
+			}
+			.kuang2text2{
+				font-size: 16px;
+				margin: 5px 50px ;
+			}
+			.kuang3{
+				width: 50%;
+				float: left;
+				height: 200px;
+			}
+			.kuang3 img{
+				float: left;				
+			}
+			.kuang3text1{
+				font-size: 20px;
+				margin: 0 60px;
+			}
+			.kuang3text2{
+				font-size: 16px;
+				margin: 5px 70px;
+			}
+			.kuang4{
+				width: 50%;
+				float: left;
+				height: 200px;
+			}
+			.kuang4 img{
+				float: left;				
+			}
+			.kuang4text1{
+				font-size: 20px;
+				margin: 0 60px;
+			}
+			.kuang4text2{
+				font-size: 16px;
+				margin: 5px 60px ;
+			}
+			#Call-action{
+				background-color: black;
+				height: 600px;
+				width: 100%;
+				position: relative;
+			}
+			#Call-actionshe{
+				background-image: url('img/图层 2.png');
+				opacity: 0.5;
+				width: 100%;
+				height: 600px;
+				background-size: 100% 700px;
+				background-repeat: no-repeat;
+				position: absolute;
+				top: -2;
+				z-index: 10;
+			}
+			#Call-actiontext{
+				margin-left: 20%;
+				width: 30%;
+				height: 100%;
+				border: 1px solid black;
+				
+			}
+			#Call-actionimg{
+				width: 48%;
+			}
+			#Call-actionimg img{
+				position: absolute;
+				top:200px;
+				right: 0;
+			}
+			#Feature2{
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				height: auto;
+				border: 1px solid #DDDDDD;
+			}
+			#Feature2 h1{
+				text-align: center;
+				line-height: 150px;
+			}
+			#t2{
+				width: 100%;
+				height: 300px;
+			}
+			.text1{
+				float: left;
+				width: 35%;
+				height: auto;
+				text-align: center;
+			}
+			.text2{
+				float: right;
+				width: 30%;
+				height: auto;
+				text-align: center;
+			}
+			.text3{
+				float: left;
+				width: 35%;
+				height: auto;
+				text-align: center;
+			}
+			#Feature3{
+				width: 80%;
+				height: auto;
+				margin: 0 auto;
+			}
+			.f3kuang1{
+				width: 100%;
+				height: 300px;
+			}
+			.f3kuang2{
+				width: 100%;
+				height: 400px;
+				margin-top: 100px;
+			}
+			.f3kuang01{
+				float: left;
+				width: 60%;
+				height: 300px;
+			}
+			.f3kuang02{
+				width: 38%;
+				float: left;
+				height: 300px;
+			}
+			.f3kuang03{
+				width: 38%;
+				height: 300px;
+				float: left;
+			}
+			.f3kuang04{
+				float: right;
+				width: 60%;
+				height: 300px;
+			}
+			#Team{
+				width: 100%;
+				height: 900px;
+				margin: 0 auto;
+				border: 1px solid #dddddd;
+			}
+			#Team h1{
+				font-size: 42px;
+				text-align: center;
+				line-height: 30px;
+				margin: 40px auto;
+			}
+			#Team p{
+				font-size: 18px;
+				text-align: center;
+				line-height: 20px;
+				margin: 20px 200px;
+			}
+			#tu1{
+				width: 80%;
+				height: 300px;
+				margin: 30px auto;
+				position: relative;
+			}
+			#tu2{
+				width: 80%;
+				height: 300px;
+				margin: 30px auto;
+			}
+			.tu01{
+				float: left;
+				width: 48%;
+				height: 100%;
+				
+			}
+			.tu02{
+				float: right;
+				width: 48%;
+				height: 100%;
+			}
+			.tu03{
+				float: left;
+				width: 48%;
+				height: 100%;
+				
+			}
+			.tu04{
+				float: right;
+				width: 48%;
+				height: 100%;
+			}
+			.tu01{
+				background-color: black;
+				width: 47%;
+			}
+			#tu01fuzhi{
+				background-image: url('img/张思远大.png');
+				background-size: 100% 300px;
+				opacity: 0.5;
+				background-color:black;
+				width: 47%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			#tuji{
+				width: 100%;
+				height: 100px;
+				margin: 30px 0;
+			}
+			.tuji1{
+				float: left;
+				width: calc(50% - 50px);
+			}
+			.tuji1 img{
+				float: right;
+			}
+			.tuji2{
+				float: left;
+				width: 100px;
+				position: relative;
+			}
+			.tuji2 img{
+				margin: 0 auto;
+				position: relative;
+				left: 50%;
+				margin-left: -22px ;
+			}
+			.tuji3{
+				float: left;
+				width: calc(50% - 50px);
+			}
+			#Contact{
+				width: 80%;
+				height: 500px;
+				position: relative;
+			}
+			.biaodang{
+				width: 40%;
+				height: 400px;
+				margin: 100px 10% 100px 10%;
+				border: 1px solid  #DDDDDD;
+			}
+			.biaodang p{
+				font-size: 16px;
+				text-align: center;
+				margin: 30px 20% 10px 20%;
+			}
+			.biaodang input{
+				margin: 20px 20%;
+			}
+			#Context{
+				width: 50%;
+				height: 400px;
+				position: absolute;
+				top: 30px;
+				right: -10%;
+			}
+			.lxifangshi{
+				position: relative;
+			}
+			.lxifangshi img{
+				margin: 20px auto;
+				
+			}.lxifangshi p{
+				display: inline;
+				position: absolute;
+				margin-top: 30px ;
+				margin-left:50px ;
+			}
+			#Footer{
+				background: black;
+				background-image: url('img/前端学院设计图_02.png');
+				background-size: 100% 300px;
+				width: 100%;
+				height: 300px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="Header">
+			<div class="header1"></div>
+			<div class="header2">
+				<div class="header2text1" style="width: 60%;margin: 80px auto 30px auto;text-align: center;color: white;font-size: 62px;">
+					Hello World
+				</div>
+				<div class="header2text2" style="text-align: center;margin: 0 auto;width: 60%;color: white;">
+					China is speeding up strategic plan, standards, traffic rules, China is speeding up strategic plan, standards, traffic rules, China is speeding up strategic plan, standards, traffic rules, 
+				</div>
+				<div class="header2kuang" style="border: 1px solid #565550;width: 70%;margin:80px auto 0 auto;height: 220px;">
+					<div class="header2text3" style="color: white;text-align: center;margin: 30px auto 5px auto;letter-spacing: 2px;<!--字符间距-->">
+						Create Your Account
+					</div>
+					<div class="header2text4" style="color: #565550; text-align: center;">
+						It is absolutely free
+					</div>
+					<div class="header2biao">
+						<input type="text" name="" id="youxiang" value="denis@getcraftwork.com" />
+						<input type="text" name="" id="password" value="Create your password" />
+						<input type="button" name="" id="" value="Sign Up" style="width: 120px; height: 30px;"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="Feature1">
+			<div class="feature1text1" style="font-size: 14px; margin: 60px auto 0 auto;text-align: center;">
+				Boatloads of Awesome
+			</div>
+			<div class="feature1text2" style="font-size: 42px; margin: 30px 20% 80px 20%;text-align: center;">
+				Ready-made, customizable, HTML landing page sections
+			</div>
+			<div class="feature1kuang1" style="width: 80%;height: 200px; margin: 5px auto;">
+				<div class="kuang1">
+					<img src="img/Iphone Icon.png"/>
+					<div class="kuang1text1">
+						Mobile First
+					</div>
+					<div class="kuang1text2">
+						All modulz are built mobile-first for <br /> maximum device compatibil
+					</div>
+				</div>
+				<div class="kuang2" >
+					<img src="img/Check Icon.png"/>
+					<div class="kuang2text1">
+						Fluid Typography
+					</div>
+					<div class="kuang2text2">
+						On different screen sizes, fonts automagically <br /> scale with the v
+					</div>
+				</div>
+			</div>
+			<div class="feature1kuang2" style="width: 80%; margin: 5px auto;">
+				<div class="kuang3">
+					<img src="img/Pencil Icon.png"/>
+					<div class="kuang3text1">
+						Accessibility
+					</div>
+					<div class="kuangtext2">
+						Support for IE8, mobile and tablet <br /> devices, screenreaders and c
+					</div>
+				</div>
+				<div class="kuang4">
+					<img src="img/Settings Icon.png"/>
+					<div class="kuang4text1">
+						Customization
+					</div>
+					<div class="kuang4text2">
+						Make any design your own using the Style <br /> Editor. Personalize fo
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="Call-action">
+			<div id="Call-actionshe">
+			</div>
+			<div id="Call-action1" style="z-index: 20;">
+				<div id="Call-actiontext" style="z-index: 20;">
+					<div id="ctext1" style="font-size: 42px;color: white;margin: 100px 0 50px 0;line-height: 50px;">
+						Supportive policies for China's smart car
+					</div>
+					<div id="ctext2" style="font-size: 16px;color: white;">
+						Sit ad omnis essent accumsan, no vis ludus ubique platonem.Sit ad omnis essent accumsan, no vis ludus ubique platonem.Sit ad omnis essent accumsan, no vis ludus ubique platonem.
+					</div>
+					<input type="button" name="" id="" value="Check out Features" style="width: 120px;height: 50px;background-color: white; z-index: 20;margin: 60px 0;"/>
+					<input type="button" name="" id="" value="Try product for Free" style=" width: 120px ;height: 50px; margin: 60px 10px;" />
+				</div>
+				<div id="Call-actionimg">
+					<img src="img/Screen.png"style="width: 500px;height: 300px;"/>
+				</div>
+			</div>
+		</div>
+		<div id="Feature2">
+			<h1>Try Our Awesome Products</h1>
+			<div id="t2">				
+				<div class="text1">
+					<img src="img/images/前端学院设计图_03.gif"/>
+					<p style="overflow: hidden;">Li Jun, a China Academy of Engineering academician and also dirLi Jun, a China Academy of Engineering academician and also dirLi Jun, a China Academy of Engineering academician and also dirLi Jun, a China Academy of Engineering academician and also dirLi Jun, a China Academy of Engineering academician and also dirLi Jun, a China Academy of Engineering academician and also dir</p>
+				</div>
+				<div class="text2">
+					<img src="img/images/前端学院设计图_05.gif"/>
+					<p style="overflow: hidden;">Li said the smart car industry is able to enlarge the current cLi Jun, a China Academy of Engineering academician and also dirLi Jun, a China Academy of Engineering academician and also dirLi Jun, a China Academy of Engineering academician and also dirLi Jun, a China Academy of Engineering academician and also dirLi Jun, a China Academy of Engineering academician and also dirLi Jun, a China Academy of Engineering academician and also dir</p>
+				</div>
+				<div class="text3">
+					<img src="img/images/前端学院设计图_07.gif"/>
+					<p style="overflow: hidden;">Zhang Junyi, a partner with NIO Capital, said that the smart caLi Jun, a China Academy of Engineering academician and also dirLi Jun, a China Academy of Engineering academician and also dirLi Jun, a China Academy of Engineering academician and also dirLi Jun, a China Academy of Engineering academician and also dirLi Jun, a China Academy of Engineering academician and also dirLi Jun, a China Academy of Engineering academician and also dir</p>
+				</div>
+			</div>
+		</div>
+		<div id="Feature3">
+			<div class="f3kuang1">
+				<div class="f3kuang01">
+					<img src="img/图层 3.png" style="width: 100%;height: 300px;"/>
+				</div>
+				<div class="f3kuang02">
+					<h1 style="font-size:20px ;line-height: 20px;margin: 20px 30px ;">Learn How to Improve Your Personal Business</h1>
+					<p style="margin: 20px 30px;">Li Jun, a China Academy of Engineering academician and also dirLi Jun, a China Academy of Engineering academician and also dirLi Jun, a China Academy of Engineering academician and also dir</p>
+				</div>
+			</div>
+			<div class="f3kuang2">
+				<div class="f3kuang03">
+					<h1 style="font-size:20px ;line-height: 20px;margin: 20px 30px ;">Choose Between Two Beautifully Designed Color Schemes.</h1>
+					<p style="margin: 20px 30px;">China will come up with its own smart car standards, traffic ruChina will come up with its own smart car standards, traffic ruChina will come up with its own smart car standards, traffic ru</p>
+				</div>
+				<div class="f3kuang04">
+					<img src="img/图层 4.png"/>
+				</div>
+			</div>
+		</div>
+		<div id="Team">
+			<h1>Our Awesome Crew</h1>
+			<p>Our unique online teaching style makes learning easy for everyoOur unique online teaching style makes learning easy for everyoOur unique online teaching style makes learning easy for everyo</p>
+			<div id="tu1">
+				<div class="tu01">
+					<p style="font-size: 20px;text-align: center;margin: 40px auto 20px auto;color: white;">Ethan Dutton</p>
+					<h1 style="font-size: 12px; text-align: center;margin: 20px auto;color: white;">Senior Visual Designer</h1>
+					<div id="tuji">
+						<div class="tuji1">
+							<img src="img/images/前端学院设计图_12.gif"/>
+						</div>
+						<div class="tuji2"><img src="img/images/前端学院设计图_14.gif"/></div>
+						<div class="tuji3"><img src="img/images/前端学院设计图_18.png"/></div>
+					</div>
+					<div id="tu01fuzhi">
+					</div>
+				</div>
+				<div class="tu02">
+					<img src="img/2.png" style="width: 98%;height: 100%;"/>
+				</div>
+			</div>
+			<div id="tu2">
+				<div class="tu03">
+					<img src="img/3.png" style="width: 98%;height: 100%;"/>
+				</div>
+				<div class="tu04">
+					<img src="img/沈大师大_meitu_3.png" style="width: 98%;height: 100%;"/>
+				</div>
+			</div>
+		</div>
+		<div id="Contact">
+			<div class="biaodang">
+				<p>Fell free to Write Us</p>
+				<input type="text" name="" id="" value="abc" style="width: 200px;"/>
+				<input type="text" name="" id="" value="abc"  style="width: 200px;"/>
+				<textarea style="width: 200px;height: 80px; margin: 20px 20%;">内容</textarea>
+				<input type="button" name="" id="" value="按钮" style="color: white;background-color: black;height: 30px;width: 200px;" />
+			</div>
+			<div id="Context">
+				<p style="font-size: 42px;text-align: center;margin: 0px 20%;">Contacts</p>
+				<p style="font-size: 16px;margin: 10px 0 0 0;">Make any design your own using the Style Editor. Personalize foMake any design your own using the Style Editor. Personalize foMake any design your own using the Style Editor. Personalize fo</h1>
+				<div class="lxifangshi">
+					<div class="lian1">
+						<img src="img/Mail Icon.png"/><p>1937751248@qq.com</p>
+					</div>
+					<div class="lian2">
+						<img src="img/Phone Icon.png"/><p>110</p>
+					</div>
+					<div class="lian3">
+						<img src="img/Map Icon.png"/><p>中国</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="Footer">
+			<div class="zui1"></div>
+			<div class="zui2"></div>
+			<div class="zui3"></div>
+			<div class="zui4"></div>
+		</div>
+	</body>
+</html>
