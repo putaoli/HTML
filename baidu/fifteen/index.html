@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>第十五天</title>
+		<style type="text/css">
+			body,html{
+				margin: 0;
+				padding: 0;
+				height: 100%;
+				position: relative;
+			}
+			#primary{
+				width: 60px;
+				height: 100%;
+				background-color: #293749;
+				position: relative;
+				float: left;
+			}
+			.item img{
+				width: 40px;
+				height: 40px;
+				margin: 5px;
+			}
+			.bottom-actions{
+				position: absolute;
+				width: 60px;
+				height: 30px;
+				background-color: #293749;
+				top: calc(100% - 20px);
+			}
+			.bottom-actions img{
+				height: 20px;
+				width: 20px;
+				margin-left: 3px;
+				margin-bottom: 10px;
+			}
+			#secondary-{
+				height: calc(100% + 10px);
+				width:200px;
+				background-color: #344460;
+				float: left;
+				position: relative;
+			}
+			.part1,.part2,.part3{
+				width: 180px;
+				height: 150px;
+				margin: 10px auto;
+				border-bottom: 1px solid #dddddd;
+				color: #b7c0c0;
+			}
+			.xiaoxi54{
+				width:20px;
+				height: 20px;
+				font-size: 10px;
+				background:#1e95ee;
+				color: white;
+				border-radius: 100px;
+				text-align: center;
+				line-height: 20px;
+			}
+			.pd1,.pd2,.pd3,.pd4,.pd5,.pd6{
+				margin-top:5px;
+			}
+			.part2 img{
+				margin-right: 5px;
+			}
+			.server-capacity{
+				position: absolute;
+				width: 180px;
+				bottom: 0px ;
+				left: 10px;
+			}
+			#top{
+				width: calc(100% - 260px);
+				height: 80px;
+				border-bottom: 1px solid #DDDDDD;
+				position: absolute;
+				top: 0px;
+				right: 0px;
+			}
+			#zhuti{
+				width: calc(100% - 260px);
+				height: calc(100% - 70px);
+				position: absolute;
+				bottom: 0px;
+				right: 0px;
+				margin-bottom: -10px;
+			}
+			#name{
+				float: left;
+				width: 75%;
+				height: 80px;
+				line-height: 80px;
+				margin-left:20px ;
+			}
+			.touxiang{
+				margin-top: 15px;
+				margin-right: 20px;
+				height: 80px;
+				position: relative;
+			}
+			#chats{
+				width: 30%;
+				float: left;
+			}
+			.shoushu{
+				width: 100%;
+				height: 50px;
+				border: 1px solid #DDDDDD;
+			}
+			.shoushu input{
+				height: 20px;
+				width: 80%;
+				margin: 10px 20px;
+				background-image: url('img/Search icon.png');
+				background-repeat: no-repeat;
+				background-position: 5px center;
+			}
+			.xingxi1{
+				width: 100%;
+				height: 110px;
+				border: 1px solid #DDDDDD;
+			}
+			.xingxi p{
+				font-size: 16px;
+				text-align: center;
+			}
+			.xingxi{
+				overflow: hidden;
+				height: calc(100% - 81px -50px);
+			}
+			#open-chat{
+				float: left;
+				width: 69%;
+				border: 1px solid #DDDDDD;
+			}
+			.youtop img{
+				float: right;
+				margin: 5px;
+				margin-top: 20px;
+			}
+			.youbottom{
+				border: 1px solid #DDDDDD;
+				
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="primary">
+			<div class="item">
+				<img src="img/Item-1.png"/>
+				<img src="img/Item 2.png"/>
+				<img src="img/Item 3.png"/>
+				<img src="img/Base.png"/>
+			</div>
+			<div class="bottom-actions">
+				<img src="img/Grid.png"/>
+				<img src="img/Settings.png"/>
+			</div>
+		</div>
+		<div id="secondary-">
+			<div class="part1">
+				<div class="pd1">
+					<div class="pad1ti" style="width: 180px; color: #717b89;">
+						MENU
+						<img src="img/Settings.png" style="float: right"/>
+					</div>
+				</div>
+				<div class="pd2">
+					<div class="pad1wenzi">
+						Overview
+					</div>
+				</div>
+				<div class="pd3">
+					<div class="pad1ti">
+						sales
+						<div class="xiaoxi54" style="float: right;">
+							54
+						</div>
+					</div>
+				</div>
+				<div class="pa4">
+					Your staff
+				</div>
+				<div class="pd5">
+					Analytics & Targeting
+				</div>
+				<div class="pd6">
+					what's New
+				</div>
+			</div>
+			<div class="part2" style="height: 130px;">
+				<div class="pd1">
+					<div class="pad1ti" style="width: 180px; color: #717b89;">
+						YOUR PRODUCTS
+						<img src="img/Settings.png" style="float: right"/>
+					</div>
+				</div>
+				<div class="pd2">
+					<div class="pad1wenzi">
+						<img src="img/Book of Wisdom.png"/>
+						Books
+					</div>
+				</div>
+				<div class="pd3">
+					<div class="pad1ti">
+						<img src="img/Video Camera.png"/>
+						Tutorials						
+					</div>
+				</div>
+				<div class="pa4">
+					<img src="img/Painting.png"/>
+					Stocks
+				</div>
+				<div class="pd5">
+					<img src="img/Chart.png"/>
+					Infographics
+				</div>
+			</div>
+			<div class="part3">
+				<div class="pd1">
+					<div class="pad1ti" style="width: 180px; color: #717b89;">
+						DASHBOARD
+						<img src="img/Settings.png" style="float: right"/>
+					</div>
+				</div>
+				<div class="pd2">
+					<div class="pad1wenzi">
+						Messages
+						<div class="xiaoxi54" style="float: right;">
+							21
+						</div>
+					</div>
+				</div>
+				<div class="pd3">
+					<div class="pad1ti">
+						Connections
+						
+					</div>
+				</div>
+				<div class="pa4">
+					Integraions
+					<div class="xiaoxi54" style="float: right; background-color: red;">
+							&nbsp;！
+						</div>
+				</div>
+				<div class="pd5">
+					Account Setings
+				</div>
+				<div class="pd6">
+					App Settings
+				</div>
+			</div>
+			<div class="server-capacity">
+				<div class="serverwenben" style="color: white;font-size: 12px;">
+					Monthly Goals&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$580/$3200
+					<img src="img/Fill.png" style="width: 180px;height: 5px;"/>
+				</div>
+			</div>
+		</div>
+		<div id="top">
+			<div id="name">
+				Messages
+			</div>
+			<div class="touxiang">
+				<img src="img/Face.png"/>
+				<div class="tuxiangtop" style="position: absolute;top: 10px;right: 60px;color: #1E95EE;">
+					Jordan J.
+				</div>
+				<div class="tuxiangbottom" style="float: right;margin-top:30px ;margin-right: 20px;">
+					Administrator
+				</div>
+			</div>
+		</div>
+		<div id="zhuti">
+			<div id="chats">
+				<div class="shoushu">
+					<input type="text" name="sousuo" id="sousuo" value="" />
+				</div>
+				<div class="xingxi">
+					<div class="xingxi1">
+						<div class="touxianga">
+							<img src="img/Face1.png" style="float: left; margin: 5px;"/>
+						</div>
+						<div class="xingxia" style="color: #1E95EE;line-height: 40px; margin-left: 50px;">
+							aaaa
+						</div>
+						<p>I pay for the 4Mb/sec down, 512 Kb/sec up service from O2. In f</p>
+					</div>
+					<div class="xingxi1">
+						<div class="touxianga">
+							<img src="img/Face1.png" style="float: left; margin: 5px;"/>
+						</div>
+						<div class="xingxia" style="color: #1E95EE;line-height: 40px; margin-left: 50px;">
+							aaaa
+						</div>
+						<p>I pay for the 4Mb/sec down, 512 Kb/sec up service from O2. In f</p>
+					</div>
+					<div class="xingxi1">
+						<div class="touxianga">
+							<img src="img/Face1.png" style="float: left; margin: 5px;"/>
+						</div>
+						<div class="xingxia" style="color: #1E95EE;line-height: 40px; margin-left: 50px;">
+							aaaa
+						</div>
+						<p>I pay for the 4Mb/sec down, 512 Kb/sec up service from O2. In f</p>
+					</div>
+					<div class="xingxi1">
+						<div class="touxianga">
+							<img src="img/Face1.png" style="float: left; margin: 5px;"/>
+						</div>
+						<div class="xingxia" style="color: #1E95EE;line-height: 40px; margin-left: 50px;">
+							aaaa
+						</div>
+						<p>I pay for the 4Mb/sec down, 512 Kb/sec up service from O2. In f</p>
+					</div>
+				</div>
+			</div>
+			<div id="open-chat">
+				<div class="youtop">
+					<p style="font-size: 15px;margin-left:20px ; display: inline-block;">Bessie Berry</p>
+					<img src="img/Trash icon.png"/>
+					<img src="img/User icon.png"/>
+					<img src="img/Upload icon.png"/>
+				</div>
+				<div class="youbottom">
+					<img src="img/12_15_03.png" style="width: 100%;height: 460px;"/>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
