@@ -9,6 +9,7 @@
 		</style>
 	</head>
 	<body>
+		<button id="ninghao" onclick="sj()">您好</button>
 		<div id="i1">
 			<input id="first-number" type="number" value="0" placeholder="第一个数字">
 		    <input id="second-number" type="number" value="0" placeholder="第二个数字">
@@ -19,6 +20,21 @@
     		<p id="result">运算结果</p>
 		</div>
     <script>
+    	var ninghao=document.getElementById("ninghao");
+    	var myDate=new Date();
+   		var h=myDate.getHours();
+   		console.log(h);
+    		function sj(){
+    			if(h>18){
+    				ninghao.innerHTML="晚上好";
+    			}
+    			else if(h<12){
+    				ninghao.innerHTML="上午好";
+    			}
+    			else{
+    				ninghao.innerHTML="下午好";
+    			}
+    		}
 			var a=document.getElementById("first-number");
 			var b=document.getElementById("second-number");
 			var c=document.getElementById("result");
@@ -46,23 +62,64 @@
     
     <div id="i2">
 		<input id="dec-number" type="number" placeholder="输入一个十进制非负整数">
-		<button id="trans-btn" >转化为二进制</button>
-		<p id="result1">运算结果</p>
+	    <input id="bin-bit" type="number" placeholder="输入转化后二进制数字位数">
+	    <button id="trans-btn" onclick="dec2bin()">转化为二进制</button>
+	    <p id="result1">运算结果</p>
 	</div>
 	<script>
 		var d=document.getElementById("dec-number");
-		function dec2bin(decNumbr){
-			if(decNumbr>0)
+		function dec2bin(){
+			var d=document.getElementById("dec-number").value;
+			if(d>0)
 			{
-				decNumber+1;
+				d=+d;
+				document.getElementById("result1").innerHTML=d.toString(2);
+				var bin=d.toString(2).length;
+				document.getElementById("bin-bit").value=bin;
 			}
 			else
 			{
-				document.getElementById("result").innerHTML="十进制输入必须为非负整数";	
+				document.getElementById("result1").innerHTML="十进制输入必须为非负整数";	
 			}
 		}
-		document.getElementById("trans-btn").onclick=dec2bin()
 		
 	</script>
+	
+	<hr />
+	
+	<p>3的小游戏</p>
+	<button onclick="k3()">开始运行</button>
+	
+	<script type="text/javascript">
+		var str = "abc";
+		var reg = RegExp(/3/);
+		function k3(){
+			for(i=1;i<101;i++){
+				if(i%3==0||reg.test(i))
+				{
+					console.log("PA");
+				}
+				else{
+					console.log(i);
+				}
+			}
+		}
+	</script>
+	
+	<hr />
+	<script language="javascript">
+		document.write("<table border='1'>");
+		for (var i=1; i<=9; i++){
+			document.write("<tr>");
+			for(var j=1; j<=i; j++){
+				document.write("<td>");
+				document.write(j+"*"+i+"="+j*i);
+				document.write("</td>");
+			}
+			document.write("</tr>");
+		}
+		document.write("</table>");
+</script>
 	</body>
+	
 </html>
