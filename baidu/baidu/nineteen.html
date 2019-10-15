@@ -32,23 +32,45 @@
             <img src="">
             <p class="">Some Text</p>
         </div>    
-        <button onclick="getAllListItem()">查找li标签</button>
+        <button onclick="getAllListItem()">返回所有li标签</button>
     </div>
     <script>
 
     function getAllListItem() {
-    	document.getElementsByTagName("h3").style.color = "blue";
+    	var li=document.getElementsByTagName("li");
+    	return console.log(li);
     }
-    function findAllHtmlSpanInOneSection(sectionId) {
-    	var a=
+
+    function findAllHtmlSpanInOneSection() {
+    	var section=document.getElementsByClassName("section");
+    	var secspan=section.getElementsByTagName("span");
+    	var add=new Array();
+    	for(i=0;i<secspan.length;i++){
+    		if(secspan[i].innerHTML=='HTML'){
+    			add.push(secspan[i]);
+    		}
+    	}
+    	return add;
         // 返回某个section下所有span中内容为HTML的span标签
     }
 
     function findListItem(sectionId, spanCont) {
-        // 返回某个section下，所有所包含span内容为spanCont的LI标签
+    	 var span = document.getElementById(sectionId).getElementsByTagName('span');
+        var dom = new Array();
+        for(var i = 0; i < span.length; i++) {
+            if(span[i].innerHTML == 'spanCont')
+                dom.push(span[i].parentElement);
+        }
+        return dom;
     }
+        // 返回某个section下，所有所包含span内容为spanCont的LI标签
 
     function getActiveLinkContent(sectionId) {
+    	var a = document.getElementById(sectionId).getElementsByClassName('active');
+    	for(i=0;i<a.length;i++){
+    		return a[i].innerHTML;
+    	}
+    	
         // 返回某个section下，class为active的链接中包含的文字内容
     }
 
