@@ -1,0 +1,68 @@
+﻿@model wukunjiang2017011903.Models.Blog
+@{
+    ViewBag.Title = "Blog";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="post_detail">
+    <!--done-->
+    <div id="topics">
+        <div class="post">
+            <h1 class="postTitle">
+                <a href="http://www.cnblogs.com/maijin/p/6541934.html" class="postTitle2" id="cb_post_title_url">@Model.Title</a>
+            </h1>
+            <div class="clear"></div>
+            <div class="postBody">
+                <div id="cnblogs_post_body">
+                    @Html.Raw(Model.Content)
+                </div><div id="MySignature"></div>
+                <div class="clear"></div>
+                <div id="blog_post_info_block">
+                    <div id="BlogPostCategory"></div>
+                    <div id="EntryTag"></div>
+                    <div id="blog_post_info">
+                        <div id="green_channel">
+                            <a onclick="DiggIt(6541934,cb_blogId,1);green_channel_success(this,'谢谢推荐！');" id="green_channel_digg" href="javascript:void(0);">好文要顶</a>
+                            <a href="javascript:void(0);" onclick="follow('c67524dd-75fe-e111-aa3f-842b2b196315');" id="green_channel_follow">关注我</a>
+                            <a href="javascript:void(0);" onclick="AddToWz(cb_entryId);return false;" id="green_channel_favorite">收藏该文</a>
+                            <a onclick="ShareToTsina()" title="分享至新浪微博" href="javascript:void(0);" id="green_channel_weibo"><img alt="" src="//common.cnblogs.com/images/icon_weibo_24.png"></a>
+                            <a onclick="shareOnWechat()" title="分享至微信" href="javascript:void(0);" id="green_channel_wechat"><img alt="" src="//common.cnblogs.com/images/wechat.png"></a>
+                        </div>
+                        <div id="author_profile">
+                            <div class="author_profile_info" id="author_profile_info">
+                                <a target="_blank" href="http://home.cnblogs.com/u/maijin/"><img alt="" class="author_avatar" src="//pic.cnblogs.com/face/448095/20161118083152.png"></a>
+                                <div class="author_profile_info" id="author_profile_detail">
+                                    <a href="http://home.cnblogs.com/u/maijin/">麦田怪人</a><br>
+                                    <a href="http://home.cnblogs.com/u/maijin/followees">关注 - 14</a><br>
+                                    <a href="http://home.cnblogs.com/u/maijin/followers">粉丝 - 175</a>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                            <div id="author_profile_honor"></div>
+                            <div id="author_profile_follow">
+                                <a onclick="follow('c67524dd-75fe-e111-aa3f-842b2b196315');return false;" href="javascript:void(0);">+加关注</a>
+                            </div>
+                        </div>
+                        <div id="div_digg">
+                            <div onclick="votePost(6541934,'Digg')" class="diggit">
+                                <span id="digg_count" class="diggnum">0</span>
+                            </div>
+                            <div onclick="votePost(6541934,'Bury')" class="buryit">
+                                <span id="bury_count" class="burynum">0</span>
+                            </div>
+                            <div class="clear"></div>
+                            <div id="digg_tips" class="diggword">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div id="post_next_prev"><a class="p_n_p_prefix" href="http://www.cnblogs.com/maijin/p/6305770.html">« </a> 上一篇：<a title="发布于2017-01-19 11:01" href="http://www.cnblogs.com/maijin/p/6305770.html">汽车的盲区在哪里？这几张图让你一眼看懂</a><br></div>
+                </div>
+
+            </div>
+            <div class="postDesc">posted @@ <span id="post-date">2017-03-13 11:35</span> <a href="http://www.cnblogs.com/maijin/">麦田怪人</a> 阅读(<span id="post_view_count">2</span>) 评论(<span id="post_comment_count">0</span>)  <a rel="nofollow" href="https://i.cnblogs.com/EditPosts.aspx?postid=6541934">编辑</a> <a onclick="AddToWz(6541934);return false;" href="#">收藏</a></div>
+        </div>
+        <script type="text/javascript">var allowComments = true, cb_blogId = 128442, cb_entryId = 6541934, cb_blogApp = currentBlogApp, cb_blogUserGuid = 'c67524dd-75fe-e111-aa3f-842b2b196315', cb_entryCreatedDate = '2017/3/13 11:35:00'; loadViewCount(cb_entryId);</script>
+
+    </div><!--end: topics 文章、评论容器-->
+</div>

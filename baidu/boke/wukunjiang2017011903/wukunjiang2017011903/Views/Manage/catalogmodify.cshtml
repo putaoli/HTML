@@ -1,0 +1,40 @@
+﻿@model wukunjiang2017011903.ViewsModels.CatalogModify
+@{
+    ViewBag.Title = "CatalogAdd";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("catalogmodify", "Manage", FormMethod.Post))
+        {
+            @Html.HiddenFor(m => m.Id)
+            <table>
+                <tr>
+                    <td>名称：</td>
+                    <td>
+                        @Html.TextBoxFor(m => m.Name)
+                    </td>
+                    <td>
+                        @Html.ValidationMessageFor(m => m.Name)
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="确定" /></td>
+                </tr>
+            </table>
+        }
+    </div>
+
+</body>
+</html>
+
+
